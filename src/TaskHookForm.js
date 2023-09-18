@@ -74,7 +74,7 @@ export default function TaskHookForm({ kisiler, submitFn }) {
               message: "Task başlığı en az 10 karakter olmalı",
             },
           })}
-          value={formData.description}
+          // value={formData.description}
         ></textarea>
         <p className="input-error">{errors.description?.message}</p>
       </div>
@@ -88,7 +88,7 @@ export default function TaskHookForm({ kisiler, submitFn }) {
                 type="checkbox"
                 name="people"
                 value={p}
-                {...register("description", {
+                {...register("people", {
                   validate: validatePeople,
                 })}
               />
